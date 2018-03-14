@@ -2,6 +2,10 @@ $primaryColor: #151515;
 $secondaryColor: #fbfbfb;
 $shadowColor: rgba(47, 47, 47, .8);
 
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	margin: 0;

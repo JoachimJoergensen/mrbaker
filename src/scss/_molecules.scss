@@ -2,12 +2,23 @@ textarea {
     max-width: 100%;
 }
 
-input, textarea, select {
+input, textarea, select, button {
     width: 300px;
     display: block;
     font-size: 1rem;
     margin: 5px 0;
     padding: 10px;
+    color: $primaryColor;
+    border: lighten($primaryColor, 80%) 1px solid;
+    -webkit-appearance:none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
 }
 
 label.checkbox, label.radio {
@@ -24,4 +35,12 @@ input[type="search"] {
     background-repeat: no-repeat;
     background-position: 10px;
     padding-left: 35px;
+}
+
+select {
+    border-radius: 0;
+    background: white;
+}
+
+input[type="button"], button {
 }
