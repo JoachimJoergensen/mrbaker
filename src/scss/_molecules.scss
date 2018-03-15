@@ -1,13 +1,24 @@
-textarea {
-    max-width: 100%;
+form {
+    padding: 1rem;
+
+    &.inline {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+}
+
+.field {
+    padding: .25rem;
 }
 
 input, textarea, select, button {
     width: 300px;
+    max-width: 100%;
     display: block;
     font-size: 1rem;
-    margin: 5px 0;
-    padding: 10px;
+    margin: .5rem 0 1rem 0;
+    padding: .7rem;
     color: $primaryColor;
     border: lighten($primaryColor, 80%) 1px solid;
     -webkit-appearance:none;
@@ -27,7 +38,11 @@ label.checkbox, label.radio {
     > input {
         display: inline-block;
         width: auto;
+        margin: .5rem 0;
     }
+}
+label.checkbox + label.checkbox, label.radio + label.radio {
+    margin: -.5rem 0 1rem 0;
 }
 
 input[type="search"] {
@@ -40,7 +55,4 @@ input[type="search"] {
 select {
     border-radius: 0;
     background: white;
-}
-
-input[type="button"], button {
 }
