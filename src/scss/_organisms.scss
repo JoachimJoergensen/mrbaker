@@ -1,0 +1,33 @@
+body {
+
+    background: #f2f2f2;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.page-content__information {
+
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+}
+
+.text-box {
+    padding-right: 2rem;
+}
+
+.page-footer__columns {
+
+    display: flex;
+}
+
+.page-footer__columns__column {
+
+    flex: 1;
+}
+
+.page-navigation__list__item {
+    flex: 1;
+    justify-content: space-evenly;
+    text-align: center;
+}
