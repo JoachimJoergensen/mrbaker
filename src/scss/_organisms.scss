@@ -1,0 +1,64 @@
+.cards {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.card {
+    position: relative;
+    max-width: 20rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+
+    .card__image {
+        height: 12rem;
+        overflow: hidden;
+
+        img {
+            transition: all 0.3s linear 0s;
+            max-width: 100%;
+        }
+    }
+
+    .card__body {
+        padding: 1rem;
+
+        h2 {
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card__footer > button {
+            margin: 0;
+        }
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        border-radius: 5px;
+        box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s linear 0s;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:hover {
+        .card__image > img {
+            transform: scale(1.1);
+        }
+    }
+}
