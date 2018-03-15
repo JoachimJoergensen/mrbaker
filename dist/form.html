@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/style.css" />
+</head>
+
+<body>
+    <form class="form">
+        <label for="">Label for default input</label>
+        <input type="text" placeholder="test input">
+
+        <label for="">Label for search input</label>
+        <input type="search" placeholder="Search">
+
+        <label for="">Label for number input</label>
+        <input type="number" placeholder="number">
+
+        <label for="">Label for textarea</label>
+        <textarea cols="30" rows="10" placeholder="placeholder "></textarea>
+
+        <label for="">Label for select</label>
+        <select>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+            <option value="">Option 4</option>
+        </select>
+
+        <label for="">Label for checkboxes</label>
+        <label class="checkbox">
+            <input type="checkbox">
+            <span>Check box</span>
+        </label>
+        <label class="checkbox">
+            <input type="checkbox">
+            <span>Check box</span>
+        </label>
+
+        <label for="">Label for radio</label>
+        <label class="radio">
+            <input type="radio" name="radio">
+            <span>Radio </span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio">
+            <span>Radio </span>
+        </label>
+
+        <button>Send</button>
+        <input type="button" value="Send">
+    </form>
+
+    <div class="field">
+        <h2>Inline Form
+            <code>form.inline</code>
+        </h2>
+        <p>Requires a
+            <code>.field</code> around
+            <code>label</code> and
+            <code>input</code>
+        </p>
+    </div>
+    <form class="inline">
+        <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="field">
+            <button>Send</button>
+        </div>
+    </form>
+</body>
+
+</html>
